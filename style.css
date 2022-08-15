@@ -22,10 +22,6 @@ body{
   box-sizing: border-box;
 }
 
-.logo{
-
-}
-
 .logo p{
   font-size: 18px;
   color: #ffffff;
@@ -45,19 +41,25 @@ h2{
   color: #333333;
   padding-left: 5%;
   box-sizing: border-box;
+  margin-bottom: 17px;
+  position: sticky;
+  top: 0;
+  left: 0;
 }
 
 .content{
-  margin-top: 123px;
+  margin: 123px 0 108px;
   width: 100%;
+
 }
 
 .categoria{
+  margin-top: 30px;
   overflow-x: auto;
 }
 
 .options{
-  width: 100%;
+  width: fit-content;
   display: flex;
 }
 
@@ -74,6 +76,7 @@ h2{
   background-color: #ffffff;
   border-radius: 9px;
   padding: 18px 0 13px;
+  position: relative;
 }
 
 .option h3{
@@ -98,9 +101,15 @@ h2{
   width: 144px;
 }
 
-.confirm{
+.bottom{
+  bottom: 0;
+  left: 0;
+  position: fixed;
+
+  z-index: 1;
   width: 100%;
   height: 92px;
+  background-color: #ffffff;
 
   display: flex;
   justify-content: center;
@@ -117,4 +126,20 @@ h2{
 
   font-size: 20px;
   color: #ffffff;
+}
+
+.icon{
+  width: 16px;
+  color: #32B72F;
+  position: absolute;
+  right: 13px;
+  bottom: 16px;
+}
+
+.border{
+  box-shadow: inset 0 0 0 5px #32B72Fcon;
+}
+
+.hidden{
+  display: none;
 }
